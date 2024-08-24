@@ -5,43 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+     <script>
+    function setBgGreen() {
+    document.body.style.backgroundColor = 'green';
+    }
+    window.onload = setBgGreen();
+     </script>
 </head>
 <body>
     <div class="background">
-        <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
+        <img class="background-image" src="halie-west-25xggax4bSA-unsplash.jpg" alt="" >
+    </div>
+    <div class="odin-wrapper">
+        <img class="odin-logo" src="odin-lined.png" alt="" >
+        <p class="odin-text">ODIN</p>
     </div>
     <div class="main-wrapper">
-      <div>
-        <h2>This is not a real online service! You known you need something<br>
-        like this in your life to help you realize your deepest dreams.<br>
-        Sign up now to get started.<br><br>
-        You know you want to.</h2>
+      <div class="header">
+        <h2 class="opening">
+          This is not a real online service! Do not use this form in any way<br> except to revel in its glory!</h2>
       </div>  
       <div class="form-wrapper">
-        <h2>Let's do this!</h2>
+        <h2 class="form-header">Let's do this!</h2>
         <!-- <div class="input-wrapper"> -->
         <form action="" method="post">
           <div class="form-column-left">
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <label for="pwd">Password</label>
-            <input type="password" name="pwd" id="pwd">
+            <div class="form-input">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name">
+            </div>
+            <div class="form-input">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-input">
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd" id="pwd">
+            </div>
           </div>  
           <div class="form-column-right">
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone"> 
-            <label for="confirm-pwd">Confirm Password</label>
-            <input type="password" name="confirm-pwd" id="confirm-pwd">
+            <div class="form-input">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name">
+            </div>
+            <div class="form-input">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="xxx-xxx-xxxx"> 
+            </div>
+            <div class="form-input">
+              <label for="confirm-pwd">Confirm Password</label>
+              <input type="password" name="confirm-pwd" id="confirm-pwd">
+            </div>
           </div>
         </form>
         <!-- </div> -->
       </div>
-      <div>
-        <input type="submit">
+      <div class="footer">
+        <button class="submit">Create Account</button>
         <p>Already have an account? <a href="">Log In</a></p>
       </div>
     </div>
