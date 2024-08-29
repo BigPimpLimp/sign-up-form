@@ -41,7 +41,7 @@
             </div>
             <div class="form-input">
               <label for="pwd">Password</label>
-              <input type="password" name="pwd" id="pwd">
+              <input type="password" name="pwd" id="pwd" minlength="8" required>
             </div>
           </div>  
           <div class="form-column-right">
@@ -51,11 +51,12 @@
             </div>
             <div class="form-input">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="xxx-xxx-xxxx"> 
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
+                placeholder="xxx-xxx-xxxx" required> 
             </div>
             <div class="form-input">
               <label for="confirm-pwd">Confirm Password</label>
-              <input type="password" name="confirm-pwd" id="confirm-pwd">
+              <input type="password" name="confirm-pwd" id="confirm-pwd" minlength="8" required>
             </div>
           </div>
         </form>

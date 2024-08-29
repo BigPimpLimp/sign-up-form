@@ -5,8 +5,11 @@
 
 * {
     box-sizing: border-box;
-    /* background-color: rgb(22, 22, 22);
-    color: white; */
+    color: white;
+}
+
+a {
+    color: #0000EE;;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: aliceblue;
+    background-color: #252526;
     display: flex;
     flex: 1;
     align-items: center;
@@ -53,8 +56,9 @@ h2, p, button, .form-column-left,
     flex: 1.2;
     justify-content: center;
     align-items: start;
-    border-color: rgb(0, 0, 0);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    background-color: #1e1e1e;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
     /* outline: 0 none;  */
 }
 
@@ -64,9 +68,9 @@ h2, p, button, .form-column-left,
 
 .footer {
     flex: 1;
-    background-color: aliceblue;
-    border-color: rgb(0, 0, 0);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    background-color: #252526;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
     /* outline: 0 none;  */
 }
 
@@ -85,6 +89,20 @@ h2, p, button, .form-column-left,
 
 label, input {
     display: block;
+}
+
+input {
+    background-color: #1e1e1e;
+    border-color: white;
+    color: white;
+}
+
+label, input, h2, button, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input, button, p {
+    font-size: 16px;
 }
 
 form {display: flex;}
@@ -126,7 +144,7 @@ input:focus {
     outline: 0 none;
 }
 
-input:invalid {
+input:invalid:focus {
     border-color: rgba(250, 0, 33, 0.8);
     box-shadow: 0 1px 1px rgba(250, 0, 33, 0.075) inset, 0 0 8px rgba(250, 0, 33, 0.6);
     outline: 0 none; 
